@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARKOP SAHABAT - Jln Tarakan 70</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;500;700&family=Outfit:wght@300;400;600;800&display=swap');
+        
+        :root {
+            --accent: #eab308;
+            --bg: #0c0c0e;
+        }
+
+        body { 
+            font-family: 'Outfit', sans-serif; 
+            background-color: var(--bg); 
+            color: #ffffff;
+            background-image: radial-gradient(circle at 2px 2px, rgba(255,255,255,0.05) 1px, transparent 0);
+            background-size: 32px 32px;
+        }
+
+        .heading-font { font-family: 'Space Grotesk', sans-serif; }
+
+        .glass-card {
+            background: rgba(20, 20, 23, 0.7);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            transition: all 0.4s ease;
+        }
+
+        .glass-card:hover {
+            border-color: var(--accent);
+            transform: translateY(-5px);
+            background: rgba(234, 179, 8, 0.03);
+        }
+
+        .price-tag {
+            background: linear-gradient(135deg, #eab308 0%, #ca8a04 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 800;
+        }
+
+        .category-title {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-weight: 800;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        .category-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 40px;
+            height: 3px;
+            background: var(--accent);
+        }
+
+        .dot-divider {
+            flex-grow: 1;
+            border-bottom: 1px dashed rgba(255,255,255,0.1);
+            margin: 0 10px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body class="scroll-smooth">
+
+<header id="home" class="relative min-h-[80vh] flex items-center justify-center px-6 overflow-hidden">
+    <div class="absolute top-20 left-10 w-64 h-64 bg-yellow-500/10 rounded-full blur-[100px]"></div>
+    <div class="max-w-4xl mx-auto text-center z-10">
+        <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/5 border border-white/10 mb-8">
+            <span class="w-2 h-2 bg-yellow-500 rounded-full animate-pulse"></span>
+            <span class="text-[10px] font-bold uppercase tracking-[0.3em]">Jln Tarakan No. 70, Makassar</span>
+        </div>
+        <h1 class="heading-font text-6xl md:text-8xl font-bold tracking-tighter mb-6">
+            WARKOP<br><span class="text-yellow-500 italic">SAHABAT</span>
+        </h1>
+        <p class="text-slate-400 text-lg md:text-xl max-w-2xl mx-auto mb-10 italic">
+            "Secangkir Kopi Sejuta Senyuman"
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="#menu" class="bg-yellow-500 text-black px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:scale-105 transition-transform">
+                Buka Menu
+            </a>
+            <a href="https://wa.me/628114139394" class="glass-card px-10 py-4 rounded-2xl font-black uppercase tracking-widest hover:bg-white/5 transition-all">
+                Hubungi Kami
+            </a>
+        </div>
+    </div>
+</header>
+
+<section id="menu" class="py-24 px-6">
+<div class="max-w-6xl mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+
+<div>
+<h3 class="category-title text-xl text-yellow-500">Coffee & Milk</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>Kopi Susu Besar</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Kopi Susu Kecil</span><div class="dot-divider"></div><span class="price-tag">10K</span></div>
+<div class="flex items-end"><span>Kopi Hitam</span><div class="dot-divider"></div><span class="price-tag">8K</span></div>
+<div class="flex items-end"><span>Kopi Susu Telur Ayam</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Es Kopi Susu</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Es Kopi Hitam</span><div class="dot-divider"></div><span class="price-tag">10K</span></div>
+<div class="flex items-end"><span>Susu Panas</span><div class="dot-divider"></div><span class="price-tag">10K</span></div>
+<div class="flex items-end"><span>Susu Dingin</span><div class="dot-divider"></div><span class="price-tag">13K</span></div>
+</div>
+</div>
+
+<div>
+<h3 class="category-title text-xl text-yellow-500">Special Beruang Brand</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>Beruang Telur + Kopi/Teh</span><div class="dot-divider"></div><span class="price-tag">25K</span></div>
+<div class="flex items-end"><span>Beruang Kopi</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+<div class="flex items-end"><span>Beruang + Teh</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+<div class="flex items-end"><span>Beruang Telur + Susu</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+<div class="flex items-end"><span>Beruang Panas + Susu</span><div class="dot-divider"></div><span class="price-tag">17K</span></div>
+<div class="flex items-end"><span>Beruang Dingin</span><div class="dot-divider"></div><span class="price-tag">17K</span></div>
+</div>
+</div>
+
+<div>
+<h3 class="category-title text-xl text-yellow-500">Tea & Milo</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>Teh Susu Besar</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Teh Susu Kecil</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Teh Manis</span><div class="dot-divider"></div><span class="price-tag">10K</span></div>
+<div class="flex items-end"><span>Es Teh Susu</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Teh Panas</span><div class="dot-divider"></div><span class="price-tag">8K</span></div>
+<div class="flex items-end"><span>Teh Susu Telur Ayam</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Milo Panas</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Milo Dingin</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+</div>
+</div>
+
+<div>
+<h3 class="category-title text-xl text-yellow-500">Energy & Soft Drink</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>You C1000 + Susu</span><div class="dot-divider"></div><span class="price-tag">25K</span></div>
+<div class="flex items-end"><span>You C1000 Susu</span><div class="dot-divider"></div><span class="price-tag">17K</span></div>
+<div class="flex items-end"><span>You C1000</span><div class="dot-divider"></div><span class="price-tag">13K</span></div>
+<div class="flex items-end"><span>Extra Joss Susu</span><div class="dot-divider"></div><span class="price-tag">11K</span></div>
+<div class="flex items-end"><span>Kukubima Susu</span><div class="dot-divider"></div><span class="price-tag">11K</span></div>
+<div class="flex items-end"><span>Fanta Susu / Dingin</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Cola-Cola Susu</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Es Jeruk + Susu</span><div class="dot-divider"></div><span class="price-tag">11K</span></div>
+<div class="flex items-end"><span>Minuman Herbal</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+</div>
+</div>
+
+<div class="lg:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-16 pt-10 border-t border-white/5">
+<div>
+<h3 class="category-title text-xl text-yellow-500">Food</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>Indomie Goreng (1/1)</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Indomie Goreng (2/1)</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Indomie Soto (1/1)</span><div class="dot-divider"></div><span class="price-tag">12K</span></div>
+<div class="flex items-end"><span>Indomie Soto (2/1)</span><div class="dot-divider"></div><span class="price-tag">15K</span></div>
+<div class="flex items-end"><span>Telur Ayam (1/2 Biji)</span><div class="dot-divider"></div><span class="price-tag">5K</span></div>
+<div class="flex items-end"><span>Kue Tradisional</span><div class="dot-divider"></div><span class="price-tag">2K</span></div>
+</div>
+</div>
+
+<div>
+<h3 class="category-title text-xl text-yellow-500">Fresh Juice</h3>
+<div class="space-y-6">
+<div class="flex items-end"><span>Jus Alpokat</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+<div class="flex items-end"><span>Jus Buah Naga</span><div class="dot-divider"></div><span class="price-tag">20K</span></div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="lokasi" class="py-24 px-6 bg-white/[0.02]">
+<div class="max-w-4xl mx-auto">
+<div class="glass-card p-10 md:p-16 rounded-[3rem] text-center">
+<h3 class="heading-font text-3xl font-bold mb-12">KUNJUNGI KAMI</h3>
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div class="text-left space-y-8">
+<div>
+<p class="text-yellow-500 text-xs font-bold uppercase tracking-widest mb-2">Lokasi Utama</p>
+<p class="text-xl font-bold">Jl. Tarakan No. 70</p>
+<p class="text-slate-400">Malimongan, Makassar</p>
+</div>
+<div>
+<p class="text-yellow-500 text-xs font-bold uppercase tracking-widest mb-2">Layanan</p>
+<p class="text-lg">Pukul 07.00 - 24.00 WITA • Free Wi-Fi</p>
+</div>
+<a href="https://wa.me/628114139394" class="inline-flex items-center space-x-3 text-green-500 hover:text-green-400 transition">
+<i class="fab fa-whatsapp text-2xl"></i>
+<span class="font-bold">0811-4139-394</span>
+</a>
+</div>
+<div class="bg-white p-6 rounded-3xl shadow-2xl transform rotate-2">
+<p class="text-black font-black mb-4 uppercase text-xs">Pindai Untuk Bayar (QRIS)</p>
+<img src="image.png" alt="QRIS" class="w-full h-auto rounded-xl">
+<p class="text-slate-400 text-[9px] mt-4 font-mono">NMID: ID1025437160712</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="py-12 text-center">
+<p class="text-slate-500 text-[10px] tracking-[0.4em] uppercase mb-2">Warkop Sahabat Makassar © 2025</p>
+<p class="text-slate-600 text-[9px] italic font-light">"Selamat Menikmati Setiap Tetesnya"</p>
+</footer>
+
+<div class="fixed bottom-6 left-1/2 -translate-x-1/2 z-50 w-[90%] md:hidden">
+<a href="https://wa.me/628114139394" class="flex items-center justify-center space-x-3 bg-green-500 text-white py-4 rounded-2xl shadow-2xl font-bold uppercase tracking-widest text-xs">
+<i class="fab fa-whatsapp text-lg"></i>
+<span>Pesan via WhatsApp</span>
+</a>
+</div>
+
+</body>
+</html>
